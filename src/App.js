@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavbarComponent/>
-      <ItemListContainerComponent greeting = "Proximamente"/>
+      <ItemListContainerComponent/>
     </>
   );
 }

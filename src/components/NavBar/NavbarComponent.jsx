@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import BurguerButtonComponent from '../BurguerButton/BurguerButtonComponent'
 import CartWidget from '../CartWidget/CartWidgetComponent'
+import logoRuta from '../../img/logo192.jpeg'
 
 
 function NavbarComponent() {
@@ -15,7 +16,7 @@ function NavbarComponent() {
     return (
         <>
             <Navbar>
-                <h2> EcoRuta</h2>
+                <img alt='EcoRuta' src={logoRuta}/>
                     <div className={`links ${clicked ? 'active' :''}`}>
                         <a onClick={handleClick} href="/">Inicio</a>
                         <a onClick={handleClick} href="/">¿Quiénes somos?</a>
