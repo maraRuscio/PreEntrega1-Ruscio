@@ -1,13 +1,14 @@
 import React from 'react'
 import './ItemComponent.css'
-//import logoRuta from '../img/logo192.jpeg'
+import logoRuta from '../../img/rinonPlana.jpeg';
 
-const ItemComponent = ({info}) => {
+const ItemComponent = ( {info} ) => {
+   console.log(info);
     return (
         <div className="product">
-            <img src={info.img} alt="esto es una imagen"></img>
-            <h2>{info.nombre}</h2>
-            <p>El precio: ${info.precio}</p>
+           <img src={logoRuta} alt="mi foto"></img>
+            <h3>Esto es un titulo</h3>
+            <p>El precio: ${info}</p>
         </div>
     )
 }

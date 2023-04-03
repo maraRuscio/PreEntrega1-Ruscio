@@ -1,8 +1,10 @@
 //import { click } from '@testing-library/user-event/dist/click'
-import React, {useState} from 'react'
-import styled from 'styled-components'
-import BurguerButtonComponent from '../BurguerButton/BurguerButtonComponent'
-import CartWidget from '../CartWidget/CartWidgetComponent'
+import React, {useState} from 'react';
+//import { NavItem } from 'react-router-dom';
+import NavItem from "./NavItem";
+import styled from 'styled-components';
+import BurguerButtonComponent from '../BurguerButton/BurguerButtonComponent';
+import CartWidget from '../CartWidget/CartWidgetComponent';
 import logoRuta from '../../img/logo192.jpeg'
 
 
@@ -16,15 +18,18 @@ function NavbarComponent() {
     return (
         <>
             <Navbar>
-                <img alt='EcoRuta' src={logoRuta}/>
+            <NavItem label={<img alt='EcoRuta' src={logoRuta} height='50px'/>} src="/" ></NavItem>
                     <div className={`links ${clicked ? 'active' :''}`}>
-                        <a onClick={handleClick} href="/">Inicio</a>
-                        <a onClick={handleClick} href="/">¿Quiénes somos?</a>
-                        <a onClick={handleClick} href="/">Servicios</a>
-                        <a onClick={handleClick} href="/">Clientes</a>
-                        <a onClick={handleClick} href="/">Productos</a>
-                        <a onClick={handleClick} href="/">Contactos</a>
-                        <a onClick={handleClick} href="/"><CartWidget/></a>
+                        <NavItem label="Home" src="/" />
+                        <NavItem src='/nosotros' label="Nosotros" />
+                        {/* <NavItem src='/Servicios' label="Servicios" />
+                        <NavItem src='/Clientes' label="Clientes" /> */}
+                        <NavItem src='/Productos' label="Productos" />
+                        <NavItem src='/category/rinon' label="Bolsas con Troquel" />
+                        <NavItem src='/category/Asaflexible' label="Bolsas con Asa flexible" />
+                        <NavItem src='/contactos' label="Contactos" />
+                        <NavItem src='/carrito'><CartWidget/></NavItem>
+                        
                     </div>
                     <div className='burguer'>
                         <BurguerButtonComponent clicked= {clicked} handleClick={handleClick} />                    
