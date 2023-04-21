@@ -1,9 +1,8 @@
-import React from "react";
-import { ItemListContainerComponent } from "../components/ItemListContainer/ItemListContainerComponent";
+import React from "react"
 
-export const Productos = () =>{
-    return(
-        <ItemListContainerComponent />
-    );
+const  Productos = ()=> {
+    return  (
+       <div>Nuestros productos Personalizados - Proximamente</div>
+      );
 }
 export default Productos;
