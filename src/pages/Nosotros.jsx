@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Nosotros = () => {
   return (
-    <div>Nosotros</div>
+    <div>Proximamente!!</div>
   );
 }
 export default Nosotros;

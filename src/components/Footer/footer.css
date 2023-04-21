@@ -1,0 +1,27 @@
+.fondo {
+    padding-top: 1rem;
+    background-color: #555;
+    border-top: 2px solid #fbb929;
+    border-right: 2px solid #fbb929;
+    color: #fff;
+}
+
+.cright{
+    background-color: #000;
+    border-top: 2px solid #fbb929;
+    border-right: 2px solid #fbb929;
+    height: 30px;
+}
+
+.cright p{
+    text-align: right;
+    color: #fff;
+}
+.mail {
+    color: #fbb929;
+
+}
+a {
+    display:block;
+    margin: 5px;
+}

@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
 export const Clientes = () =>{
     return(
-        <div>Clientes</div>
+        <div>Proximamente!</div>
     );
 }
 export default Clientes;
